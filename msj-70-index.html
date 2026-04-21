@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Container Page</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: sans-serif; }
+        .container { display: flex; flex-direction: column; height: 100vh; }
+        header { padding: 10px; background: #f4f4f4; border-bottom: 1px solid #ccc; }
+        iframe { flex-grow: 1; width: 100%; border: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Replace the src with your target URL -->
+            <iframe 
+                src="https://www.mojaz247.com/masjid-profile3.php?siteid=MSJ-70" 
+                width="100%" 
+                height="500px" 
+                title="External Site Container"
+                sandbox="allow-scripts allow-same-origin"
+                loading="lazy">
+                <p>Your browser does not support iframes. 
+                   <a href="https://www.mojaz247.com/masjid-profile3.php?siteid=MSJ-70">Click here to visit the site directly.</a>
+                </p>
+            </iframe>
+    </div>
+
+</body>
+</html>
+
+
